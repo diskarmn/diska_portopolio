@@ -5,6 +5,493 @@
 
 body {
     width: 100%;
+}* {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+    position: relative;
+}
+
+#tampil {
+    position: fixed;
+    outline: 1px solid #dd6363;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 5px;
+    opacity: 0;
+    z-index: -9;
+}
+
+#tampil:target {
+    opacity: 1;
+    z-index: 9;
+}
+
+#tampil a {
+    text-decoration: none;
+    color: #dd6363;
+    font-weight: bold;
+    padding: 2px;
+    
+}
+
+#tampil a:hover {
+    text-decoration: underline;
+    color: #b62626;
+}
+
+.custom-loader {
+    width: 50px;
+    margin: 3px;
+    height: 10px;
+    background:
+        linear-gradient(90deg, #0000, #dd6363) left -50px top 0/50px 20px no-repeat #E4E4ED;
+    animation: ct2 1s infinite linear;
+}
+
+@keyframes ct2 {
+    100% {
+        background-position: right -50px top 0;
+    }
+}
+
+header {
+    background:
+        linear-gradient(90deg, rgba(255, 21, 21, 0.067) 33%, rgba(253, 172, 172, 0.333) 50%, rgba(255, 122, 122, 0.067) 66%) #dd6363;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+}
+
+.haer{
+    height:3px !important;
+    width:80%;
+}
+@keyframes ct1 {
+    0% {
+        background-position: right
+    }
+}
+.foto {
+    width: 300px;
+    height: 300px;
+    background-image: url('pp.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+}
+
+.basic ul, .it ul{
+    
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 100px;
+    justify-content: center !important;
+}
+.basic h2, .it h2, .projek h1, .kontak h2{
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+.kontak h2{
+    color:rgb(75, 75, 75) !important;
+}
+.basic ul li{
+    box-shadow: 0 0 10px rgb(255, 203, 203);
+}
+.it ul li{
+    box-shadow: 0 0 10px rgb(148, 148, 148);
+    color:rgb(66, 66, 66);
+}
+
+.basic ul li, .it ul li{
+
+    list-style: none;
+    
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+.haerdark{
+    height:3px;
+    width:50%;
+    background-color: grey;
+}
+.daftarprojek{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 100px;
+    justify-content: center !important;
+}
+.kotak {
+    outline: 3px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background:
+        linear-gradient(90deg, #0001 33%, #0005 50%, #0001 66%) #dd6363;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+}
+.serti{
+    outline: 3px solid rgb(175, 175, 175);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background:
+        linear-gradient(90deg, #0001 33%, rgba(46, 46, 46, 0.333) 50%, #0001 66%) transparent;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+}
+@keyframes ct1 {
+    0% {
+        background-position: right
+    }
+}
+.kotak a {
+    background-color: white;
+    color: #b62626;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.kotak a:hover {
+    background-color: transparent;
+    outline: 1px solid white;
+    color: white;
+}
+
+.kotak img {
+    width:100%;
+}
+.serti a {
+    background-color: transparent;
+    color: #535353;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.serti a:hover {
+    background-color: transparent;
+    outline: 1px solid grey;
+    background-color: grey;
+    color: white;
+}
+
+.serti img {
+    width:100%;
+}
+/* */
+.kontak {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #E4E4ED;
+}
+
+
+
+.kontak h1 {
+    align-self: center;
+    justify-self: center;
+    font-size: 130%;
+    padding: 10px;
+}
+
+.isikontak {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+}
+
+.kontakkiri {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kontak1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.klogo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.email{
+    background-image: url('https://cdn-icons-png.flaticon.com/128/542/542689.png');
+
+}
+.tel{
+    background-image: url('https://cdn-icons-png.flaticon.com/128/25/25453.png');
+
+}
+.add{
+    background-image: url('https://cdn-icons-png.flaticon.com/128/447/447031.png');
+
+}
+
+.sebelahlogo {
+    padding-left: 10px;
+}
+
+.sebelahlogo h1 {
+    font-weight: normal;
+    font-size: 120%;
+}
+
+.sebelahlogo p {
+    font-size: 90%;
+}
+
+.kontakkanan {
+    display: flex;
+    align-items: center;
+
+    width: 40%;
+}
+
+.kontakkanan form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.kontakkanan form input[type=text] {
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 10px 0;
+    width: 95%;
+    align-self: center;
+}
+
+.kontakkanan form input[type=email] {
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 10px 0;
+    width: 95%;
+    align-self: center;
+}
+
+.kontakkanan form textarea {
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 10px 0;
+    width: 95%;
+    align-self: center;
+}
+
+.kontakkanan form input[type=submit] {
+    padding: 5px;
+    background-color: #b62626;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+}
+
+
+
+.it ul li {
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Animasi dengan delay untuk elemen dengan indeks genap */
+.it ul li:nth-child(even) {
+    animation: shadow-animation-even 1s ease-in-out infinite;
+    animation-delay: 0.5s; /* Delay untuk indeks genap */
+}
+
+/* Animasi dengan delay untuk elemen dengan indeks ganjil */
+.it ul li:nth-child(odd) {
+    animation: shadow-animation-odd 1s ease-in-out infinite;
+    animation-delay: 0s; /* Delay untuk indeks ganjil */
+}
+
+/* Animasi untuk bayangan pada elemen dengan indeks genap */
+@keyframes shadow-animation-even {
+    0% {
+        box-shadow: 0 0 10px black;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 10px black;
+    }
+}
+
+/* Animasi untuk bayangan pada elemen dengan indeks ganjil */
+@keyframes shadow-animation-odd {
+    0% {
+        box-shadow: 0 0 10px black;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 10px black;
+    }
+}
+
+
+/* Animasi dengan delay untuk elemen dengan indeks genap */
+.basic ul li:nth-child(even) {
+    animation: red-shadow-animation-even 1s ease-in-out infinite;
+    animation-delay: 0.5s; /* Delay untuk indeks genap */
+}
+
+/* Animasi dengan delay untuk elemen dengan indeks ganjil */
+.basic ul li:nth-child(odd) {
+    animation: red-shadow-animation-odd 1s ease-in-out infinite;
+    animation-delay: 0s; /* Delay untuk indeks ganjil */
+}
+
+/* Animasi untuk bayangan pada elemen dengan indeks genap */
+@keyframes red-shadow-animation-even {
+    0% {
+        box-shadow: 0 0 10px rgb(255, 165, 165);
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(255, 165, 165);
+    }
+}
+
+/* Animasi untuk bayangan pada elemen dengan indeks ganjil */
+@keyframes red-shadow-animation-odd {
+    0% {
+        box-shadow: 0 0 10px rgb(255, 165, 165);
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(255, 165, 165);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px !important;
+        height: max-content;
+    }
+    #tampil a {
+       font-size: 60% !important;
+        
+    }
+    .custom-loader {
+        width: 25px;
+        margin: 2px;
+        height: 5px;
+    }
+
+    nav h1 {
+        font-size: 90%;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+    }
+    header p{
+        font-size: 70%;
+    }
+    header h1{
+        font-size: 90%;
+        margin-top:20px;
+    }
+    .basic ul, .it ul{
+        grid-template-columns: repeat(auto-fill, 200px);
+    
+        grid-gap: 10px;
+        padding:0 10px 0 10px;
+    }
+    .daftarprojek{
+        grid-template-columns: repeat(auto-fill, 250px);
+    
+        grid-gap: 20px;
+        padding:0 10px 0 10px;
+    }
+    .basic ul li, .it ul li{
+     
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding:10px;
+        font-size: 80%;
+    }
+    .kotak a{
+        padding:5px 10px;
+        font-size: 80%;
+        border-radius: 3px;
+    }
+    #mpad{
+        padding:20px !important;
+    }
+    .isikontak{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .klogo{
+        width:30px;
+        height: 30px;
+    }
+    .kontakkiri, .kontakkanan{
+        width:100%
+    }
+    .kontakkanan form input[type=text],  .kontakkanan form input[type=submit] ,
+    .kontakkanan form input[type=email], .kontakkanan form textarea {
+        font-size: 60%;
+    }
+    footer p{
+        font-size: 50%;
+    }
+  
 }
 
 nav {

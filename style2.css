@@ -147,7 +147,7 @@ header {
     align-items: center;
     flex-direction: column;
 }
-.projekku a{
+.judul{
     color:white;
     outline: 1px solid white;
     border-radius: 5px;
@@ -155,7 +155,7 @@ header {
     padding:3px 10px;
     margin-top:5px;
 }
-.projekku a:hover{
+.judul:hover{
     background-color: white;
     color:red;
     transition: .5;

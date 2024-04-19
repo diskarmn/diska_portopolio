@@ -1,56 +1,20 @@
+
+body {
+    position: relative;
+    box-sizing: border-box;
+  
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
     transition: .3s;
 }
 
-body {
-    width: 100%;
-}* {
-    font-family: Arial, Helvetica, sans-serif;
-    transition: .3s;
-}
 
-body {
-    width: 100%;
-}
 
 nav {
     position: relative;
 }
 
-#tampil {
-    position: fixed;
-    outline: 1px solid #dd6363;
-    top: 5px;
-    right: 5px;
-    background-color: white;
-    border-radius: 5px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    padding: 5px;
-    opacity: 0;
-    z-index: -9;
-}
-
-#tampil:target {
-    opacity: 1;
-    z-index: 9;
-}
-
-#tampil a {
-    text-decoration: none;
-    color: #dd6363;
-    font-weight: bold;
-    padding: 2px;
-    
-}
-
-#tampil a:hover {
-    text-decoration: underline;
-    color: #b62626;
-}
 
 .custom-loader {
     width: 50px;
@@ -70,7 +34,7 @@ nav {
 header {
     background:
         linear-gradient(90deg, rgba(255, 21, 21, 0.067) 33%, rgba(253, 172, 172, 0.333) 50%, rgba(255, 122, 122, 0.067) 66%) #dd6363;
-    background-size: 300% 100%;
+    background-size: 300% 100%; 
     animation: ct1 1s infinite linear;
 }
 
@@ -83,15 +47,55 @@ header {
         background-position: right
     }
 }
+
+/* .wadah-foto{
+    height:500px;
+    display: flex;
+    align-items: center;
+} */
 .foto {
     width: 300px;
     height: 300px;
-    background-image: url('pp.webp');
+   
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     border-radius: 50%;
-
+    animation: gonta 4s infinite ease-in-out;
+}
+@keyframes gonta{
+    0% {
+        transform: skew(0deg, 0deg);
+        transform: rotateY(0deg);
+        background-image: url('p.webp');
+    }
+    30%{
+        transform: skew(0deg, 0deg);
+        transform: rotateY(0deg); 
+    }
+    35%{
+        background-image: url('p.webp');
+    }
+    50% {
+        transform: skew(20deg, 20deg);
+        transform: rotateY(180deg);
+        background-image: url('pp.webp');
+    }
+    60% {
+        transform: skew(20deg, 20deg);
+        transform: rotateY(180deg);
+        background-image: url('pp.webp');
+    }
+    80%{
+        background-image: url('p.webp');
+        transform: skew(0deg, 0deg);
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: skew(0deg, 0deg);
+        transform: rotateY(0deg);
+        background-image: url('p.webp');
+    }
 }
 
 .basic ul, .it ul{
@@ -139,13 +143,21 @@ header {
 }
 
 .projekku{
-    outline: 3px solid white;
+    border: 3px solid white;
     padding: 10px;
     border-radius: 10px;
-    
+    transition: .5s;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.projekku:hover{
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 1);
+    transition: .5s;
+}
+.projekku:hover a{
+    color: #dd6363;
 }
 .judul{
     color:white;
@@ -181,7 +193,7 @@ header {
     border-radius: 10px;
     background:
         linear-gradient(90deg, rgba(247, 218, 218, 0.067) 33%, rgba(151, 18, 18, 0.333) 50%, rgba(173, 56, 56, 0.067) 66%) transparent;
-    background-size: 300% 100%;
+    background-size: 300% 100%; 
     animation: ct1 1s infinite linear;
 }
 @keyframes ct1 {
@@ -273,7 +285,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -441,10 +453,7 @@ header {
         padding: 10px !important;
         height: max-content;
     }
-    #tampil a {
-       font-size: 60% !important;
-        
-    }
+
     .custom-loader {
         width: 25px;
         margin: 2px;
@@ -520,39 +529,6 @@ nav {
     position: relative;
 }
 
-#tampil {
-    position: fixed;
-    outline: 1px solid #dd6363;
-    top: 5px;
-    right: 5px;
-    background-color: white;
-    border-radius: 5px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    padding: 5px;
-    opacity: 0;
-    z-index: -9;
-}
-
-#tampil:target {
-    opacity: 1;
-    z-index: 9;
-}
-
-#tampil a {
-    text-decoration: none;
-    color: #dd6363;
-    font-weight: bold;
-    padding: 2px;
-    
-}
-
-#tampil a:hover {
-    text-decoration: underline;
-    color: #b62626;
-}
 
 .custom-loader {
     width: 50px;
@@ -572,7 +548,7 @@ nav {
 header {
     background:
         linear-gradient(90deg, rgba(255, 21, 21, 0.067) 33%, rgba(253, 172, 172, 0.333) 50%, rgba(255, 122, 122, 0.067) 66%) #dd6363;
-    background-size: 300% 100%;
+    background-size: 300% 100%; 
     animation: ct1 1s infinite linear;
 }
 
@@ -593,7 +569,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
-
+    display: hidden;
 }
 
 .basic ul, .it ul{
@@ -648,7 +624,7 @@ header {
     border-radius: 10px;
     background:
         linear-gradient(90deg, #0001 33%, #0005 50%, #0001 66%) #dd6363;
-    background-size: 300% 100%;
+    background-size: 300% 100%; 
     animation: ct1 1s infinite linear;
 }
 .serti{
@@ -660,7 +636,7 @@ header {
     border-radius: 10px;
     background:
         linear-gradient(90deg, #0001 33%, rgba(46, 46, 46, 0.333) 50%, #0001 66%) transparent;
-    background-size: 300% 100%;
+    background-size: 300% 100%; 
     animation: ct1 1s infinite linear;
 }
 @keyframes ct1 {
@@ -834,10 +810,7 @@ header {
         padding: 10px !important;
         height: max-content;
     }
-    #tampil a {
-       font-size: 60% !important;
-        
-    }
+
     .custom-loader {
         width: 25px;
         margin: 2px;
@@ -907,4 +880,158 @@ header {
         font-size: 50%;
     }
   
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+.coba{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top:48%;
+    right:5%;
+    opacity: 0;
+    transition: .5s;
+    
+}
+
+.anak-coba{
+    position: absolute;
+    left:-80%;
+    top:-120%;
+    width:200px;
+    height: 200px;
+}
+
+.welcome{
+    position: absolute;
+   
+    top:-50%;
+    height:50px;
+    width:max-content;
+    right: 180%;
+    font-size: 200%;
+    line-height: 50px;
+    white-space: nowrap;
+    animation: hilang 2s forwards;
+    transition: .5s;
+}
+
+.textnya{
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+@keyframes hilang{
+    0%{
+        display: none;
+        transform: scale(1);
+    }
+    30%{
+        display: none;
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(1.3);
+    }
+    98%{
+        display: block;
+        transform: scale(1);
+    }
+    100%{
+        display: none;
+        transform: scale(1);
+    }
+}
+
+
+
+.ah{
+    display: none;
+    background-image: url('cat4.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-80%;
+    top:-120%;
+    width:200px;
+    height: 200px;
+    animation: besar .7s forwards;
+}
+
+.clickmenu{
+    position: absolute;
+    top:-200%;
+    left:-60%;
+    font-size: 120%;
+    animation: turun 1s infinite;
+}
+@keyframes besar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+
+        transform: scale(1);
+    }
+}
+@keyframes turun{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+
+        transform: translateY(0);
+    }
+}
+
+.munculkebawah{
+    display: hidden;
+    
+}
+.anak-coba-satu{
+    background-image: url('cat1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anak-coba-dua{
+    background-image: url('cat2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anak-coba-tiga{
+    background-image: url('cat3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+ 
+    .welcome{
+        font-size: 150% ;
+        height:50px;
+        right: 140%;
+        font-size: 160%;
+        line-height: 50px;
+        top:-60%;
+    }
+    .ah, .anak-coba{
+        width:150px;
+        height: 150px;
+        left:-30%;
+    }   
+
+    .clickmenu{
+        left:-15%;
+    }
+
 }

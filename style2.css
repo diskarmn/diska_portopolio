@@ -16,43 +16,20 @@ nav {
 }
 
 
-.custom-loader {
-    width: 50px;
-    margin: 3px;
-    height: 10px;
-    background:
-        linear-gradient(90deg, #0000, #dd6363) left -50px top 0/50px 20px no-repeat #E4E4ED;
-    animation: ct2 1s infinite linear;
-}
 
-@keyframes ct2 {
+
+/* @keyframes ct2 {
     100% {
         background-position: right -50px top 0;
     }
-}
+} */
 
-header {
-    background:
-        linear-gradient(90deg, rgba(255, 21, 21, 0.067) 33%, rgba(253, 172, 172, 0.333) 50%, rgba(255, 122, 122, 0.067) 66%) #dd6363;
-    background-size: 300% 100%; 
-    animation: ct1 1s infinite linear;
-}
 
 .haer{
     height:3px !important;
     width:80%;
 }
-@keyframes ct1 {
-    0% {
-        background-position: right
-    }
-}
 
-/* .wadah-foto{
-    height:500px;
-    display: flex;
-    align-items: center;
-} */
 .foto {
     width: 300px;
     height: 300px;
@@ -172,18 +149,7 @@ header {
     color:red;
     transition: .5;
 }
-.kotak {
-    outline: 3px solid white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
-    background:
-        linear-gradient(90deg, #0001 33%, #0005 50%, #0001 66%) #dd6363;
-    background-size: 300% 100%;
-    animation: ct1 1s infinite linear;
-}
+
 .serti{
     outline: 3px solid rgb(255, 255, 255);
     display: flex;
@@ -201,25 +167,7 @@ header {
         background-position: right
     }
 }
-.kotak a {
-    background-color: white;
-    color: #b62626;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-weight: bold;
-}
 
-.kotak a:hover {
-    background-color: transparent;
-    outline: 1px solid white;
-    color: white;
-}
-
-.kotak img {
-    width:100%;
-}
 .serti a {
     background-color: transparent;
     color: #cc1f1f;
@@ -530,14 +478,14 @@ nav {
 }
 
 
-.custom-loader {
+/* .custom-loader {
     width: 50px;
     margin: 3px;
     height: 10px;
     background:
         linear-gradient(90deg, #0000, #dd6363) left -50px top 0/50px 20px no-repeat #E4E4ED;
     animation: ct2 1s infinite linear;
-}
+} */
 
 @keyframes ct2 {
     100% {
@@ -546,15 +494,16 @@ nav {
 }
 
 header {
-    background:
-        linear-gradient(90deg, rgba(255, 21, 21, 0.067) 33%, rgba(253, 172, 172, 0.333) 50%, rgba(255, 122, 122, 0.067) 66%) #dd6363;
-    background-size: 300% 100%; 
-    animation: ct1 1s infinite linear;
+   
 }
 
 .haer{
     height:3px !important;
     width:80%;
+     /* background:
+        linear-gradient(90deg, rgba(255, 21, 21, 0.067) 33%, rgba(253, 172, 172, 0.333) 50%, rgba(255, 122, 122, 0.067) 66%) #dd6363;
+    background-size: 300% 100%; 
+    animation: ct1 1s infinite linear; */
 }
 @keyframes ct1 {
     0% {

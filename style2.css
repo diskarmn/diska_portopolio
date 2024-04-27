@@ -897,7 +897,7 @@ header {
 
 .ah{
     display: none;
-    background-image: url('cat4.png');
+    background-image: url('cat4.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -946,19 +946,19 @@ header {
     
 }
 .anak-coba-satu{
-    background-image: url('cat1.png');
+    background-image: url('cat1.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .anak-coba-dua{
-    background-image: url('cat2.png');
+    background-image: url('cat2.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .anak-coba-tiga{
-    background-image: url('cat3.png');
+    background-image: url('cat3.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

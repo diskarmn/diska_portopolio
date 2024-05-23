@@ -123,10 +123,10 @@
                         class="fa-brands fa-js" style="margin:0 5px"></i>jquery & DOM</li>
                 <li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2200" data-aos-offset="0"><i
                         class="fa-brands fa-bootstrap" style="margin:0 5px"></i>boostrap</li>
-                <li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2400" data-aos-offset="0"><i
-                        class="fa-solid fa-code" style="margin:0 5px"></i>html</li>
+                <li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2400" data-aos-offset="0">
+                        <i class="fa-regular fa-object-group" style="margin:0 5px"></i>tailwind</li>
                 <li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2600" data-aos-offset="0"><i
-                        class="fa-brands fa-css3" style="margin:0 5px"></i>css</li>
+                        class="fa-brands fa-css3" style="margin:0 5px"></i>html & css</li>
                 <li data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2800" data-aos-offset="0"><i
                         class="fa-solid fa-object-group" style="margin:0 5px"></i>UI UX</li>
             </ul>
@@ -292,17 +292,21 @@
         <h1>SERTIFICATE</h1>
         <div class="daftarprojek row">
             <div data-aos="zoom-in-up" data-aos-delay="200" class="serti col-lg-5 col-11 m-lg-4 m-2 my-md-4 justify-content-center">
+                <img src="seven.png">
+                <a href="#" id="show-modal" >Seven Inc Intern Web developer </a>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-delay="400" class="serti col-lg-5 col-11 m-lg-4 m-2 my-md-4 justify-content-center">
                 <img src="pretest.png">
                 <a href="https://cdn.learningx.com/coursecertificate64d437d2b27b87400367bc37-1691630514001.pdf">LearningX
                     Pretest</a>
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="400" class="serti col-lg-5 col-11 m-lg-4 m-2 my-md-4 justify-content-center">
+            <div data-aos="zoom-in-up" data-aos-delay="200" class="serti col-lg-5 col-11 m-lg-4 m-2 my-md-4 justify-content-center">
                 <img src="serti.jpg">
                 <a href="https://cdn.learningx.com/coursecertificate64d9fe3aadec30b35d00c204-1703248809608.pdf">LearningX
                     MBKM Course Batch 5</a>
             </div>
-            <div data-aos="zoom-in-up" data-aos-delay="200" class="serti col-lg-5 col-11 m-lg-4 m-2 my-md-4 justify-content-center">
-                <img src="serti.jpg">
+            <div data-aos="zoom-in-up" data-aos-delay="400" class="serti col-lg-5 col-11 m-lg-4 m-2 my-md-4 justify-content-center">
+                <img src="ui.png">
                 <a href="https://cdn.learningx.com/coursecertificate65a0d542d2af05450c01274c-1706584446674.pdf">LearningX
                     UI/UX Sertificate</a>
             </div>
@@ -350,9 +354,19 @@
             ; Created by Diska Romandoni
         </p>
     </footer>
-    <!-- <div class="div" style="height: 1000px;">
+    
 
-</div> -->
+    <div class="seven justify-content-center align-items-center" style="display: none;">
+        <div class="d-flex flex-column justify-content-center text-center m-auto">
+            <i onclick="sevenlost()" class="fa-solid fa-backward  my-2" style="color: #fff0f0; font-size: 300%;"></i>
+            <div class="col-10 ">
+                <img src="seven.png">
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="coba  "  data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"data-aos="fade-down">
 
         <div class="anak-coba anak-coba-satu " style="display: none;"></div>
@@ -380,10 +394,20 @@
     </div>
 </div>
 
+
+
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
     <script>
-       
+        document.getElementById('show-modal').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.seven').style.display = 'flex';
+        });
+
+        function sevenlost() {
+            document.querySelector('.seven').style.display = 'none';
+        }
 
         const coba = document.querySelector('.coba');
 
